@@ -1,0 +1,5 @@
+# Ship LF everywhere. A PHP plugin gets deployed to Linux hosts, and CRLF sneaking in
+# from a Windows checkout produces noisy diffs and can break heredocs.
+* text=auto eol=lf
+*.php text eol=lf
+*.txt text eol=lf
