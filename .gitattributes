@@ -3,3 +3,8 @@
 * text=auto eol=lf
 *.php text eol=lf
 *.txt text eol=lf
+
+# Keep VCS plumbing out of `git archive` exports, so the release zip contains only
+# what WordPress should unpack into wp-content/plugins.
+/.gitignore     export-ignore
+/.gitattributes export-ignore
